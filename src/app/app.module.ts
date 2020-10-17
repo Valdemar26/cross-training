@@ -15,6 +15,7 @@ import { RedButtonComponent } from './components/red-button/red-button.component
     AppRoutingModule
   ],
   providers: [],
+  entryComponents: [RedButtonComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
