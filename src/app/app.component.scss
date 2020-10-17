@@ -1,0 +1,64 @@
+.cards-wrapper {
+  width: 90%;
+  height: auto;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #09FFA6;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
+    padding: 20px;
+    border-radius: 5px;
+    background: #DBFFB0;
+    color: rgba(0,0,0,.87);
+    height: auto;
+    min-height: 300px;
+
+    .card-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .card-buttons-wrapper {
+      button {
+        color: #fff;
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        outline: none;
+        cursor: pointer;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+        &.btn-success {
+          background-color: #28a745;
+          border-color: #28a745;
+
+          &:hover {
+            background-color: darken(#28a745, 10%);
+            border-color: darken(#28a745, 10%);
+          }
+        }
+
+        &.btn-danger {
+          background-color: #dc3545;
+          border-color: #dc3545;
+
+          &:hover {
+            background-color: darken(#dc3545, 10%);
+            border-color: darken(#dc3545, 10%);
+          }
+        }
+      }
+    }
+  }
+}

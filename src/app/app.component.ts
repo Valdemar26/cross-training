@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ComponentFactoryResolver, ViewContainerRef} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'cross-training';
+
+  constructor(
+    private viewContainerRef: ViewContainerRef,
+    private componentFactoryResolver: ComponentFactoryResolver
+  ) {
+
+  }
+
+
 }
