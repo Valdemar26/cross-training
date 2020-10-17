@@ -4,7 +4,11 @@
     <div class="card-title">Dynamic button</div>
 
     <div class="card-buttons-wrapper">
-      <button class="btn-success">Generate red button</button>
+
+      <button class="btn-success" (click)="generateDynamicRedButton()">Generate red button</button>
+
+      <ng-container #buttonContainer></ng-container>
+
     </div>
   </div>
 
