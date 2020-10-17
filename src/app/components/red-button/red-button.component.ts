@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+
 
 @Component({
   selector: 'app-red-button',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RedButtonComponent implements OnInit {
 
-  constructor() { }
+  @Input() parentRef;
 
-  ngOnInit(): void {
+  public ngOnInit(): void {
+    console.log(this.parentRef);
   }
 
+  public destroyDynamicRedButton(): void {
+    this.parentRef.destroy();
+    this.parentRef = null;
+  }
 }
